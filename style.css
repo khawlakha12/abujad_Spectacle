@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&display=swap');
+*,html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #F8F9FB;
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+h1 {
+    font-weight: 600;
+    font-size: calc(1.1rem + 1.1vw);
+}
+p {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+.yellow {
+    display: inline-block;
+    color: #4AABDE;
+    font-weight: 700;
+}
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 0.5% 5% 0.5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 4px 13px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 13px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 13px -5px rgba(0,0,0,0.75);
+    z-index: 100;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+    margin-left: 2%;
+}
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+nav ul li:last-child{
+    display: none;
+}
+nav ul li:hover {
+    color: #4AABDE;
+}
+.active {
+    color: #0d6493;
+    font-weight: 700;
+}
+.logo {
+    max-width: 12%;
+    height: 100%;
+}
+.logo img {
+    object-fit: contain;
+    width: 100%;
+}
+.primaryContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainContainer {
+    width: 100%;
+    height: auto;
+    padding: 30px 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header {
+    min-height: 50dvh;
+    width: 100%;
+    position: relative;
+}
+.backImage {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#abujad {
+    position: absolute;
+    object-fit: contain;
+    width: auto;
+    height: 95%;
+    z-index: 50;
+    bottom: 0;
+    right: 40%;
+}
+.quote {
+    position: absolute;
+    z-index: 7;
+    width: 30%;
+    max-height: 80%;
+    top: 10%;
+    left: 5rem;
+    background-color: white;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+}
+.quote:hover {
+    transform:scale(1.05);
+}
+.quote p {
+    margin-left: 3%;
+    font-size: 1.4vw;
+}
+.leftQuote {
+    margin-bottom: 1rem;
+}
+.rightQuote {
+    float: right;
+    transform: rotate(180deg);
+}
+.cardContainer {
+    top: 45%;
+    right: 5rem;
+    position: absolute;
+    z-index: 5;
+    height: auto;
+    width: 30%;
+    height: 30%;
+    color: rgb(255, 255, 255);
+}
+.cardContainer:hover {
+    transform:scale(1.1);
+}
+.ctaButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.firstButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a85bf;
+    color: white;
+    padding: 1%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.firstButton:hover {
+    background-color: #0d6493;
+}
+.buttonFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a85bf;
+    color: white;
+    padding: 1%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.buttonFlex:hover {
+    background-color: #0d6493;
+}
+.leftContainer {
+    width: 100%;
+}
+.formulaire {
+    width: 100%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-bottom: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.intl-tel-input {
+display: table-cell;
+}
+.intl-tel-input .selected-flag {
+z-index: 4;
+}
+.intl-tel-input .country-list {
+z-index: 5;
+}
+.input-group .intl-tel-input .form-control {
+border-top-left-radius: 4px;
+border-top-right-radius: 0;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 0;
+}
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+.show {
+	opacity: 1;
+	transform: translateX(0);
+	filter: blur(0);
+}
+
+.primaryContainer p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.classementChart {
+    width: 100%;
+    height: au;
+}
+
+@media (max-width: 480px) {
+
+    
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+.logo {
+    max-width: 30%;
+    height: 100%;
+}
+.logo img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+
+
+
+.mainContainer {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+}
+.header {
+    height: 70dvh;
+}
+.backImage {
+    object-fit: cover;
+}
+#abujad {
+    height: 50%;
+    right: 50%;
+}
+.quote {
+    width: 80%;
+    left: 2rem;
+    padding: 1%;
+}
+.quote:hover {
+    transform:scale(1.05);
+}
+.quote p {
+    font-size: 4vw;
+}
+.cardContainer {
+    top: 70%;
+    right: 2rem;
+    width: 40%;
+    color: rgb(255, 255, 255);
+}
+.ctaButtons {
+    flex-direction: column;
+    background-color: transparent;
+    gap: 15px;
+    width: 100%;
+}
+.firstButton {
+    text-align: center;
+    padding: 2%;
+    width: 98%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.buttonFlex {
+    text-align: center;
+    padding: 2%;
+    width: 98%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.primaryContainer p {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+}
